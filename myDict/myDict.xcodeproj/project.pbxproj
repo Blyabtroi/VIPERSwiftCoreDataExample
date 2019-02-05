@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7532BF4621F606920095A2D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532BF4521F606920095A2D1 /* AppDelegate.swift */; };
+		7532BF4821F606920095A2D1 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532BF4721F606920095A2D1 /* TranslateViewController.swift */; };
+		7532BF4B21F606920095A2D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7532BF4921F606920095A2D1 /* Main.storyboard */; };
+		7532BF4E21F606920095A2D1 /* myDict.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7532BF4C21F606920095A2D1 /* myDict.xcdatamodeld */; };
+		7532BF5021F606930095A2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7532BF4F21F606930095A2D1 /* Assets.xcassets */; };
+		7532BF5321F606930095A2D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7532BF5121F606930095A2D1 /* LaunchScreen.storyboard */; };
+		7532BF6621F648AF0095A2D1 /* DictViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532BF6421F648AF0095A2D1 /* DictViewController.swift */; };
+		7532BF6B21F6501D0095A2D1 /* InputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532BF6921F6501D0095A2D1 /* InputCell.swift */; };
+		7532BF6C21F6501D0095A2D1 /* InputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7532BF6A21F6501D0095A2D1 /* InputCell.xib */; };
+		7532BF6F21F650A00095A2D1 /* OutputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7532BF6D21F650A00095A2D1 /* OutputCell.swift */; };
+		7532BF7021F650A00095A2D1 /* OutputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7532BF6E21F650A00095A2D1 /* OutputCell.xib */; };
+		754651EA21F72AC70028F1F3 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754651E921F72AC70028F1F3 /* LanguagesViewController.swift */; };
+		754651EC21F72BC40028F1F3 /* LanguagesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754651EB21F72BC40028F1F3 /* LanguagesProtocols.swift */; };
+		754651EE21F751A40028F1F3 /* LanguagesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754651ED21F751A40028F1F3 /* LanguagesRouter.swift */; };
+		754651F021F754040028F1F3 /* LanguagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754651EF21F754040028F1F3 /* LanguagesPresenter.swift */; };
+		754651F221F754140028F1F3 /* LanguagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754651F121F754140028F1F3 /* LanguagesInteractor.swift */; };
+		754651F421F754240028F1F3 /* LanguagesLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754651F321F754240028F1F3 /* LanguagesLocalDataManager.swift */; };
+		75BB000021F8A420006DAFD1 /* TranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBFFFF21F8A420006DAFD1 /* TranslatePresenter.swift */; };
+		75BB000221F8A457006DAFD1 /* TranslateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB000121F8A457006DAFD1 /* TranslateInteractor.swift */; };
+		75BB000621F8A490006DAFD1 /* TranslateLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB000521F8A490006DAFD1 /* TranslateLocalDataManager.swift */; };
+		75BB000A21F8BA68006DAFD1 /* BaseLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB000921F8BA68006DAFD1 /* BaseLocalDataManager.swift */; };
+		75BB001A21F9D1EB006DAFD1 /* TranslateRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB001921F9D1EA006DAFD1 /* TranslateRemoteDataManager.swift */; };
+		75BB001C21F9DC93006DAFD1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB001B21F9DC93006DAFD1 /* API.swift */; };
+		75BB002421F9EC42006DAFD1 /* TranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB002321F9EC42006DAFD1 /* TranslationModel.swift */; };
+		75BB004821FBB313006DAFD1 /* DictProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB004721FBB313006DAFD1 /* DictProtocols.swift */; };
+		75BB004A21FBB360006DAFD1 /* WordsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB004921FBB360006DAFD1 /* WordsModel.swift */; };
+		75BB004C21FC265A006DAFD1 /* DictRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB004B21FC265A006DAFD1 /* DictRouter.swift */; };
+		75BB004E21FC268B006DAFD1 /* DictPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB004D21FC268B006DAFD1 /* DictPresenter.swift */; };
+		75BB005021FC26D8006DAFD1 /* DictInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB004F21FC26D8006DAFD1 /* DictInteractor.swift */; };
+		75BB005221FC271A006DAFD1 /* DictLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB005121FC271A006DAFD1 /* DictLocalDataManager.swift */; };
+		75BB005421FC297F006DAFD1 /* RootRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB005321FC297F006DAFD1 /* RootRouterProtocol.swift */; };
+		75BB005621FC29BD006DAFD1 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB005521FC29BD006DAFD1 /* RootRouter.swift */; };
+		75BB005821FC2A4A006DAFD1 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB005721FC2A4A006DAFD1 /* BaseRouter.swift */; };
+		75BB005C21FC2F67006DAFD1 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB005A21FC2F67006DAFD1 /* WordCell.swift */; };
+		75BB005D21FC2F67006DAFD1 /* WordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BB005B21FC2F67006DAFD1 /* WordCell.xib */; };
+		75BB005F21FC6B77006DAFD1 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB005E21FC6B77006DAFD1 /* Keys.swift */; };
+		75BB006121FC6E7B006DAFD1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB006021FC6E7B006DAFD1 /* BaseModel.swift */; };
+		75BBFFE921F7580B006DAFD1 /* LanguagesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBFFE821F7580B006DAFD1 /* LanguagesModel.swift */; };
+		75BBFFEB21F758C4006DAFD1 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBFFEA21F758C4006DAFD1 /* CoreDataStore.swift */; };
+		75BBFFED21F75907006DAFD1 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBFFEC21F75907006DAFD1 /* Errors.swift */; };
+		75BBFFF321F88906006DAFD1 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBFFF221F88906006DAFD1 /* Languages.swift */; };
+		75BBFFFC21F8A129006DAFD1 /* TranslateProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBFFFB21F8A129006DAFD1 /* TranslateProtocols.swift */; };
+		75BBFFFE21F8A29A006DAFD1 /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBFFFD21F8A29A006DAFD1 /* TranslateRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7532BF4221F606910095A2D1 /* myDict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myDict.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7532BF4521F606920095A2D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7532BF4721F606920095A2D1 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		7532BF4A21F606920095A2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7532BF4D21F606920095A2D1 /* myDict.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myDict.xcdatamodel; sourceTree = "<group>"; };
+		7532BF4F21F606930095A2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7532BF5221F606930095A2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7532BF5421F606930095A2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7532BF6421F648AF0095A2D1 /* DictViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictViewController.swift; sourceTree = "<group>"; };
+		7532BF6921F6501D0095A2D1 /* InputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCell.swift; sourceTree = "<group>"; };
+		7532BF6A21F6501D0095A2D1 /* InputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputCell.xib; sourceTree = "<group>"; };
+		7532BF6D21F650A00095A2D1 /* OutputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputCell.swift; sourceTree = "<group>"; };
+		7532BF6E21F650A00095A2D1 /* OutputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutputCell.xib; sourceTree = "<group>"; };
+		754651E921F72AC70028F1F3 /* LanguagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
+		754651EB21F72BC40028F1F3 /* LanguagesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesProtocols.swift; sourceTree = "<group>"; };
+		754651ED21F751A40028F1F3 /* LanguagesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesRouter.swift; sourceTree = "<group>"; };
+		754651EF21F754040028F1F3 /* LanguagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesPresenter.swift; sourceTree = "<group>"; };
+		754651F121F754140028F1F3 /* LanguagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesInteractor.swift; sourceTree = "<group>"; };
+		754651F321F754240028F1F3 /* LanguagesLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesLocalDataManager.swift; sourceTree = "<group>"; };
+		75BB000121F8A457006DAFD1 /* TranslateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateInteractor.swift; sourceTree = "<group>"; };
+		75BB000521F8A490006DAFD1 /* TranslateLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateLocalDataManager.swift; sourceTree = "<group>"; };
+		75BB000921F8BA68006DAFD1 /* BaseLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalDataManager.swift; sourceTree = "<group>"; };
+		75BB001921F9D1EA006DAFD1 /* TranslateRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRemoteDataManager.swift; sourceTree = "<group>"; };
+		75BB001B21F9DC93006DAFD1 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		75BB002321F9EC42006DAFD1 /* TranslationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationModel.swift; sourceTree = "<group>"; };
+		75BB004721FBB313006DAFD1 /* DictProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictProtocols.swift; sourceTree = "<group>"; };
+		75BB004921FBB360006DAFD1 /* WordsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsModel.swift; sourceTree = "<group>"; };
+		75BB004B21FC265A006DAFD1 /* DictRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictRouter.swift; sourceTree = "<group>"; };
+		75BB004D21FC268B006DAFD1 /* DictPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictPresenter.swift; sourceTree = "<group>"; };
+		75BB004F21FC26D8006DAFD1 /* DictInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictInteractor.swift; sourceTree = "<group>"; };
+		75BB005121FC271A006DAFD1 /* DictLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictLocalDataManager.swift; sourceTree = "<group>"; };
+		75BB005321FC297F006DAFD1 /* RootRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouterProtocol.swift; sourceTree = "<group>"; };
+		75BB005521FC29BD006DAFD1 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		75BB005721FC2A4A006DAFD1 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		75BB005A21FC2F67006DAFD1 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		75BB005B21FC2F67006DAFD1 /* WordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCell.xib; sourceTree = "<group>"; };
+		75BB005E21FC6B77006DAFD1 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		75BB006021FC6E7B006DAFD1 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		75BBFFE821F7580B006DAFD1 /* LanguagesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesModel.swift; sourceTree = "<group>"; };
+		75BBFFEA21F758C4006DAFD1 /* CoreDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStore.swift; sourceTree = "<group>"; };
+		75BBFFEC21F75907006DAFD1 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		75BBFFF221F88906006DAFD1 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		75BBFFFB21F8A129006DAFD1 /* TranslateProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateProtocols.swift; sourceTree = "<group>"; };
+		75BBFFFD21F8A29A006DAFD1 /* TranslateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
+		75BBFFFF21F8A420006DAFD1 /* TranslatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7532BF3F21F606910095A2D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC9E67121F7AB7000944230 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7532BF4C21F606920095A2D1 /* myDict.xcdatamodeld */,
+				75BBFFEA21F758C4006DAFD1 /* CoreDataStore.swift */,
+				75BBFFEC21F75907006DAFD1 /* Errors.swift */,
+				75BBFFF221F88906006DAFD1 /* Languages.swift */,
+				75BB005E21FC6B77006DAFD1 /* Keys.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7532BF3921F606910095A2D1 = {
+			isa = PBXGroup;
+			children = (
+				7532BF4421F606920095A2D1 /* myDict */,
+				7532BF4321F606910095A2D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7532BF4321F606910095A2D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7532BF4221F606910095A2D1 /* myDict.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7532BF4421F606920095A2D1 /* myDict */ = {
+			isa = PBXGroup;
+			children = (
+				75BB005321FC297F006DAFD1 /* RootRouterProtocol.swift */,
+				75BB005521FC29BD006DAFD1 /* RootRouter.swift */,
+				7532BF4521F606920095A2D1 /* AppDelegate.swift */,
+				75BBFFE721F757F6006DAFD1 /* Entites */,
+				754651E821F72AAA0028F1F3 /* Languages */,
+				7532BF5A21F642D70095A2D1 /* Translate */,
+				7532BF6821F648BE0095A2D1 /* Dictionary */,
+				7532BF4921F606920095A2D1 /* Main.storyboard */,
+				7532BF4F21F606930095A2D1 /* Assets.xcassets */,
+				7532BF5121F606930095A2D1 /* LaunchScreen.storyboard */,
+				7532BF5421F606930095A2D1 /* Info.plist */,
+				0AC9E67121F7AB7000944230 /* Data */,
+				75BB000921F8BA68006DAFD1 /* BaseLocalDataManager.swift */,
+				75BB005721FC2A4A006DAFD1 /* BaseRouter.swift */,
+				75BB001B21F9DC93006DAFD1 /* API.swift */,
+			);
+			path = myDict;
+			sourceTree = "<group>";
+		};
+		7532BF5A21F642D70095A2D1 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				75BBFFFB21F8A129006DAFD1 /* TranslateProtocols.swift */,
+				7532BF5B21F642E20095A2D1 /* View */,
+				75BBFFFD21F8A29A006DAFD1 /* TranslateRouter.swift */,
+				75BBFFFF21F8A420006DAFD1 /* TranslatePresenter.swift */,
+				75BB000121F8A457006DAFD1 /* TranslateInteractor.swift */,
+				75BB000521F8A490006DAFD1 /* TranslateLocalDataManager.swift */,
+				75BB001921F9D1EA006DAFD1 /* TranslateRemoteDataManager.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		7532BF5B21F642E20095A2D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7532BF4721F606920095A2D1 /* TranslateViewController.swift */,
+				7532BF6921F6501D0095A2D1 /* InputCell.swift */,
+				7532BF6A21F6501D0095A2D1 /* InputCell.xib */,
+				7532BF6D21F650A00095A2D1 /* OutputCell.swift */,
+				7532BF6E21F650A00095A2D1 /* OutputCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7532BF6821F648BE0095A2D1 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				75BB004721FBB313006DAFD1 /* DictProtocols.swift */,
+				75BB005921FC2F40006DAFD1 /* View */,
+				75BB004B21FC265A006DAFD1 /* DictRouter.swift */,
+				75BB004D21FC268B006DAFD1 /* DictPresenter.swift */,
+				75BB004F21FC26D8006DAFD1 /* DictInteractor.swift */,
+				75BB005121FC271A006DAFD1 /* DictLocalDataManager.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		754651E821F72AAA0028F1F3 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				754651EB21F72BC40028F1F3 /* LanguagesProtocols.swift */,
+				754651E921F72AC70028F1F3 /* LanguagesViewController.swift */,
+				754651ED21F751A40028F1F3 /* LanguagesRouter.swift */,
+				754651EF21F754040028F1F3 /* LanguagesPresenter.swift */,
+				754651F121F754140028F1F3 /* LanguagesInteractor.swift */,
+				754651F321F754240028F1F3 /* LanguagesLocalDataManager.swift */,
+			);
+			path = Languages;
+			sourceTree = "<group>";
+		};
+		75BB005921FC2F40006DAFD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7532BF6421F648AF0095A2D1 /* DictViewController.swift */,
+				75BB005A21FC2F67006DAFD1 /* WordCell.swift */,
+				75BB005B21FC2F67006DAFD1 /* WordCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75BBFFE721F757F6006DAFD1 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				75BBFFE821F7580B006DAFD1 /* LanguagesModel.swift */,
+				75BB002321F9EC42006DAFD1 /* TranslationModel.swift */,
+				75BB004921FBB360006DAFD1 /* WordsModel.swift */,
+				75BB006021FC6E7B006DAFD1 /* BaseModel.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7532BF4121F606910095A2D1 /* myDict */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7532BF5721F606930095A2D1 /* Build configuration list for PBXNativeTarget "myDict" */;
+			buildPhases = (
+				7532BF3E21F606910095A2D1 /* Sources */,
+				7532BF3F21F606910095A2D1 /* Frameworks */,
+				7532BF4021F606910095A2D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myDict;
+			productName = myDict;
+			productReference = 7532BF4221F606910095A2D1 /* myDict.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7532BF3A21F606910095A2D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vasiliy Kozlov";
+				TargetAttributes = {
+					7532BF4121F606910095A2D1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 7532BF3D21F606910095A2D1 /* Build configuration list for PBXProject "myDict" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7532BF3921F606910095A2D1;
+			productRefGroup = 7532BF4321F606910095A2D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7532BF4121F606910095A2D1 /* myDict */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7532BF4021F606910095A2D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7532BF7021F650A00095A2D1 /* OutputCell.xib in Resources */,
+				75BB005D21FC2F67006DAFD1 /* WordCell.xib in Resources */,
+				7532BF5321F606930095A2D1 /* LaunchScreen.storyboard in Resources */,
+				7532BF5021F606930095A2D1 /* Assets.xcassets in Resources */,
+				7532BF6C21F6501D0095A2D1 /* InputCell.xib in Resources */,
+				7532BF4B21F606920095A2D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7532BF3E21F606910095A2D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75BB005021FC26D8006DAFD1 /* DictInteractor.swift in Sources */,
+				75BBFFEB21F758C4006DAFD1 /* CoreDataStore.swift in Sources */,
+				75BB005C21FC2F67006DAFD1 /* WordCell.swift in Sources */,
+				75BB004E21FC268B006DAFD1 /* DictPresenter.swift in Sources */,
+				75BBFFF321F88906006DAFD1 /* Languages.swift in Sources */,
+				7532BF6B21F6501D0095A2D1 /* InputCell.swift in Sources */,
+				754651F421F754240028F1F3 /* LanguagesLocalDataManager.swift in Sources */,
+				75BB000A21F8BA68006DAFD1 /* BaseLocalDataManager.swift in Sources */,
+				754651F221F754140028F1F3 /* LanguagesInteractor.swift in Sources */,
+				75BB000221F8A457006DAFD1 /* TranslateInteractor.swift in Sources */,
+				75BB005821FC2A4A006DAFD1 /* BaseRouter.swift in Sources */,
+				7532BF4821F606920095A2D1 /* TranslateViewController.swift in Sources */,
+				75BB005421FC297F006DAFD1 /* RootRouterProtocol.swift in Sources */,
+				75BBFFFC21F8A129006DAFD1 /* TranslateProtocols.swift in Sources */,
+				75BB000621F8A490006DAFD1 /* TranslateLocalDataManager.swift in Sources */,
+				75BB004A21FBB360006DAFD1 /* WordsModel.swift in Sources */,
+				754651F021F754040028F1F3 /* LanguagesPresenter.swift in Sources */,
+				754651EA21F72AC70028F1F3 /* LanguagesViewController.swift in Sources */,
+				754651EE21F751A40028F1F3 /* LanguagesRouter.swift in Sources */,
+				7532BF6F21F650A00095A2D1 /* OutputCell.swift in Sources */,
+				75BBFFE921F7580B006DAFD1 /* LanguagesModel.swift in Sources */,
+				75BB005621FC29BD006DAFD1 /* RootRouter.swift in Sources */,
+				75BB004C21FC265A006DAFD1 /* DictRouter.swift in Sources */,
+				75BB004821FBB313006DAFD1 /* DictProtocols.swift in Sources */,
+				75BB006121FC6E7B006DAFD1 /* BaseModel.swift in Sources */,
+				7532BF4E21F606920095A2D1 /* myDict.xcdatamodeld in Sources */,
+				75BB005F21FC6B77006DAFD1 /* Keys.swift in Sources */,
+				7532BF6621F648AF0095A2D1 /* DictViewController.swift in Sources */,
+				75BB002421F9EC42006DAFD1 /* TranslationModel.swift in Sources */,
+				7532BF4621F606920095A2D1 /* AppDelegate.swift in Sources */,
+				75BB000021F8A420006DAFD1 /* TranslatePresenter.swift in Sources */,
+				75BBFFFE21F8A29A006DAFD1 /* TranslateRouter.swift in Sources */,
+				75BBFFED21F75907006DAFD1 /* Errors.swift in Sources */,
+				754651EC21F72BC40028F1F3 /* LanguagesProtocols.swift in Sources */,
+				75BB001C21F9DC93006DAFD1 /* API.swift in Sources */,
+				75BB001A21F9D1EB006DAFD1 /* TranslateRemoteDataManager.swift in Sources */,
+				75BB005221FC271A006DAFD1 /* DictLocalDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7532BF4921F606920095A2D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7532BF4A21F606920095A2D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7532BF5121F606930095A2D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7532BF5221F606930095A2D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7532BF5521F606930095A2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7532BF5621F606930095A2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7532BF5821F606930095A2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z4Z9V45NF;
+				INFOPLIST_FILE = myDict/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.myDict;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7532BF5921F606930095A2D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Z4Z9V45NF;
+				INFOPLIST_FILE = myDict/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.myDict;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7532BF3D21F606910095A2D1 /* Build configuration list for PBXProject "myDict" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7532BF5521F606930095A2D1 /* Debug */,
+				7532BF5621F606930095A2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7532BF5721F606930095A2D1 /* Build configuration list for PBXNativeTarget "myDict" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7532BF5821F606930095A2D1 /* Debug */,
+				7532BF5921F606930095A2D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7532BF4C21F606920095A2D1 /* myDict.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7532BF4D21F606920095A2D1 /* myDict.xcdatamodel */,
+			);
+			currentVersion = 7532BF4D21F606920095A2D1 /* myDict.xcdatamodel */;
+			path = myDict.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7532BF3A21F606910095A2D1 /* Project object */;
+}

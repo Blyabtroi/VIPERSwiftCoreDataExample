@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Dictionaries" representedClassName="Dictionaries" syncable="YES" codeGenerationType="class">
+        <relationship name="langLeft" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Languages" syncable="YES"/>
+        <relationship name="langRight" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Languages" syncable="YES"/>
+        <relationship name="wordLeft" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Words" syncable="YES"/>
+        <relationship name="wordRight" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Words" syncable="YES"/>
+    </entity>
+    <entity name="Languages" representedClassName="Languages" syncable="YES" codeGenerationType="class">
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="words" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Words" inverseName="language" inverseEntity="Words" syncable="YES"/>
+    </entity>
+    <entity name="Translation" representedClassName="Translation" syncable="YES" codeGenerationType="class">
+        <relationship name="leftLanguage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Languages" syncable="YES"/>
+        <relationship name="rightLanguage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Languages" syncable="YES"/>
+    </entity>
+    <entity name="Words" representedClassName="Words" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="language" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Languages" inverseName="words" inverseEntity="Languages" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Dictionaries" positionX="300.734375" positionY="52.6484375" width="128" height="105"/>
+        <element name="Languages" positionX="-18" positionY="27" width="128" height="90"/>
+        <element name="Translation" positionX="144" positionY="180" width="128" height="75"/>
+        <element name="Words" positionX="165.03125" positionY="281.10546875" width="128" height="75"/>
+    </elements>
+</model>
